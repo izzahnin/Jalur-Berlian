@@ -236,7 +236,7 @@ main {
 }
 
 .fig-about {
-  margin-right: 20px;
+  margin-right: 10px;
   justify-content: center;
   width: 100%;
   max-width: 500px;
@@ -247,14 +247,15 @@ main {
 
 .about-row1 {
   display: flex;
+  width: 40%;
 }
 .about-row2 {
-  width: 30%;
+  width: 50%;
   display: flex;
 }
 
 .about-row2 p {
-  margin-left: 20px;
+  margin-left: 15px;
   text-align: justify;
 }
 /* ====PROFILE=== */
@@ -477,11 +478,31 @@ footer {
   .content-home p {
     width: 70%;
   }
-  .fig-about {
-    margin-right: 15px;
-    width: 100%;
-    max-width: 300px;
+  .content-about {
+    flex-direction: column;
   }
+
+  .fig-about {
+    margin: 0;
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .about-row1 {
+    display: flex;
+    width: 65%;
+  }
+  .about-row2 {
+    margin: 20px 0 0 0;
+    width: 80%;
+    display: flex;
+  }
+
+  .about-row2 p {
+    margin-top: 10px;
+    text-align: justify;
+  }
+
   .profile {
     display: flex;
     flex-direction: column;
@@ -576,6 +597,10 @@ footer {
     justify-content: center;
   }
 
+  .about-row1 {
+    width: 80%;
+  }
+
   .about-row2 {
     margin: 15px 0 30px 0;
     width: 85%;
@@ -592,7 +617,6 @@ footer {
     /* width: 100%; */
     justify-content: center;
     align-items: center;
-    width: 290px;
   }
   .profile {
     flex-direction: column;
