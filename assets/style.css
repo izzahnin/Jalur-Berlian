@@ -453,6 +453,12 @@ footer {
 }
 
 /* ====RESPONSIVE===== */
+/* monitor */
+@media all and (min-width: 1500px) {
+  .fig-about {
+    margin: auto;
+  }
+}
 /* Tablet */
 
 @media all and (max-width: 820px) {
