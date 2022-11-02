@@ -32,7 +32,7 @@ header {
 }
 
 .hero {
-  background-image: url(/FrontEnd/jalurberlian/assets/img/hero.png);
+  background-image: url(/FrontEnd/jalurberlian/hero.png);
   background-size: cover;
   background-position: right;
   width: auto;
@@ -193,12 +193,9 @@ main {
   display: flex;
   flex-direction: column;
   width: auto;
-  /* margin: auto; */
   height: auto;
   background-size: cover;
-  /* background-color: #ffffff; */
   background-color: #ffc300;
-  /* background-color: #ffd00f; */
 }
 
 .aboutus h1 {
@@ -313,7 +310,7 @@ main {
   width: auto;
   max-height: 100%;
   margin: auto;
-  background-image: url(/FrontEnd/jalurberlian/assets/img/sevice.png);
+  background-image: url(/FrontEnd/jalurberlian/sevice.png);
 
   background-size: cover;
   background-position: right;
@@ -451,14 +448,14 @@ footer {
   .content-home h1 {
     font-size: 50px;
   }
-}
 
-.fig-about {
-  margin-right: 15px;
-  justify-content: center;
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  .fig-about {
+    margin-right: 15px;
+    justify-content: center;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  }
 }
