@@ -1,0 +1,439 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  font-weight: 400;
+
+  background-color: #dca375;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  color: #000000;
+}
+/*=========NAVIGASI BAR=========*/
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: inline;
+  z-index: 1000;
+}
+
+.hero {
+  background-image: url(/FrontEnd/jalurberlian/assets/img/hero1.png);
+  background-size: cover;
+  background-position: right;
+  width: auto;
+  height: 759px;
+}
+
+.logo img {
+  display: flex;
+  width: 60px;
+}
+
+.navbar {
+  display: flex;
+  text-align: center;
+  height: 50px;
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: #f1ece8; */
+  /* border-bottom: #ffffff; */
+  /* box-shadow: 0 2px 4px 0 rgba(13, 13, 13, 0); */
+  position: sticky;
+  z-index: 1;
+}
+
+.nav-trans {
+  background-color: #00000000;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.5s;
+}
+
+.nav-color {
+  /* background-color: #003566; */
+  background-color: #082f53;
+  /* background-color: #0b65da; */
+  box-shadow: rgba(100, 100, 111, 0.38) 0px 7px 29px 0px;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+nav ul {
+  align-items: center;
+  display: flex;
+  list-style: none;
+  width: 30%;
+  justify-content: space-around;
+  /* justify-content: end; */
+}
+nav li a {
+  text-decoration: none;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+}
+nav a:hover {
+  font-weight: 500;
+  color: #ffffff;
+}
+nav ul li:active {
+  font-weight: bolder;
+}
+
+nav ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #ffc300;
+  /* background: #ffd00f; */
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+nav ul li:hover::after {
+  width: 100%;
+}
+
+.btn-contact a {
+  text-decoration: none;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #001d3d;
+}
+.btn-contact a:hover {
+  font-weight: bold;
+  color: #001d3d;
+}
+
+button {
+  border: none;
+  align-content: center;
+  background: #ffc300;
+  /* background: #ffd00f; */
+  color: #001d3d;
+  text-align: center;
+  border-radius: 5px;
+  height: 40px;
+  width: 120px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+/* =======MAIN======== */
+main {
+  width: auto;
+}
+.home {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin: auto;
+}
+.content-home {
+  /* background-image: url(/FrontEnd/jalurberlian/assets/img/hero.png); */
+  background-size: cover;
+  background-position: top;
+  background-position: right;
+  width: auto;
+  height: 720px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  /* align-items: center; */
+}
+.content-home img {
+  margin: 10px 0 20px 0;
+  width: 200px;
+}
+.content-home h2 {
+  font-weight: 600;
+  align-items: center;
+  color: #ffffff;
+}
+.content-home h1 {
+  font-size: 70px;
+  /* line-height: 100%; */
+  align-items: center;
+  color: #ffffff;
+}
+.content-home p {
+  color: #ffffff;
+  max-width: 45%;
+  padding: 0 0 20px 0;
+}
+
+/* ====ABOUT US===== */
+
+.aboutus {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  /* margin: auto; */
+  height: auto;
+  background-size: cover;
+  /* background-color: #ffffff; */
+  background-color: #ffc300;
+  /* background-color: #ffd00f; */
+}
+
+.aboutus h1 {
+  font-size: 30px;
+  margin: 50px 0 0 0;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #001d3d;
+  text-shadow: 3px 4px 10px rgba(42, 45, 54, 0.68);
+}
+
+.content-about {
+  margin: 20px 0 50px 0;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.fig-about {
+  margin-right: 20px;
+  justify-content: center;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.about-row2 {
+  width: 30%;
+  display: flex;
+}
+
+.about-row2 p {
+  margin-left: 20px;
+  text-align: justify;
+}
+/* ====PROFILE=== */
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin: auto;
+  height: 500px;
+  /* justify-content: center; */
+  /* background-color: #ffc300; */
+  background-color: #ffffff;
+}
+.content-profile {
+  margin: 20px 0 50px 0;
+  width: auto;
+  height: 300px;
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: center;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.profile h1 {
+  font-size: 30px;
+  align-items: center;
+  text-align: center;
+  margin: 50px 0 0 0;
+  /* background-color: rgb(255, 255, 255); */
+  padding: 5px 15px;
+  color: #001d3d;
+  /* color: #001d3d; */
+  /* color: #ffffff; */
+  text-shadow: 3px 4px 10px rgba(42, 45, 54, 0.68);
+}
+
+.profile-row1 {
+  margin: 20px 0;
+  display: flex;
+  /* width: 50%; */
+  justify-content: center;
+}
+.profile-row2 {
+  /* margin: 20px 0; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* width: 70%; */
+}
+
+.profile-row1 img {
+  margin-right: 20px;
+  justify-content: center;
+  /* align-content: flex-end; */
+  /* border-radius: 20px; */
+  width: 375px;
+  /* box-shadow: 0 0 20px#000000; */
+}
+
+.profile-row2 table {
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+/* =====SERVICE==== */
+.service {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  max-height: 100%;
+  /* height: 650px; */
+  margin: auto;
+  /* background-color: #082f53; */
+  /* background: linear-gradient(135deg, #2e6da9, #001d3d); */
+  background-image: url(/FrontEnd/jalurberlian/assets/img/sevice.png);
+
+  background-size: cover;
+  background-position: right;
+  width: auto;
+}
+
+.service h1 {
+  font-size: 30px;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0 0 0;
+  /* background-color: rgb(255, 255, 255); */
+  padding: 5px 15px 0 15px;
+  color: white;
+  text-shadow: 3px 4px 10px rgba(42, 45, 54, 0.68);
+}
+
+.content-service {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0px 10px 10px;
+  /* height: 580px; */
+  margin: 30px 0 150px 0;
+  /* background-color: #ffffff; */
+}
+
+.container {
+  /* align-items: center; */
+  max-width: 400px;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  background-color: white;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.container .title {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+.container .title::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 30px;
+}
+
+.container form .user-details,
+.container form .container-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+form .user-details,
+form .container-details {
+  display: flex;
+  /* margin: 20px 0 12px 0; */
+  width: 500px;
+  width: calc(100% / 2 - 20px);
+}
+
+.user-details .input-box input,
+.container-details .input-box input {
+  display: flex;
+  height: 35px;
+  width: 340px;
+  /* width: 100%; */
+  margin-bottom: 5px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #001d3d;
+  padding-left: 15px;
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+form .btn-masuk {
+  height: 45px;
+  margin-bottom: 45px;
+}
+form .btn-cari {
+  height: 45px;
+  margin-bottom: 5px;
+}
+form .btn-masuk input,
+form .btn-cari input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  color: #001d3d;
+  background: #ffc300;
+  /* background: linear-gradient(135deg, #2e6da9, #001d3d); */
+}
+form .btn-masuk input:hover,
+form .btn-cari input:hover {
+  color: #ffffff;
+  /* background: linear-gradient(135deg, #001d3d, #2e6da9); */
+
+  background: #001d3d;
+}
+
+/* ====FOOTER==== */
+footer {
+  padding: 15px;
+  color: #001d3d;
+  background-color: white;
+  text-align: center;
+  font-weight: bold;
+}
