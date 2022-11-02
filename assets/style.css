@@ -111,6 +111,23 @@ nav ul li:hover::after {
   width: 100%;
 }
 
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: #5f7161;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
 .btn-contact a {
   text-decoration: none;
   text-align: center;
@@ -459,3 +476,43 @@ footer {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   }
 }
+
+@media all and (max-width: 576px) {
+
+  .menu-toggle {
+    display: flex;
+    z-index: 1;
+    top: 15px;
+  }
+
+  .active {
+    display: block;
+  }
+  nav ul {
+    display: none;
+    margin: 50px 0;
+    background-color: #082f53;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 200px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  nav ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border-top: 1px solid #ffffff;
+  }
+
+  nav a:active,
+  nav a:hover {
+    font-weight: 600;
+    color: #5f7161;
+  }
