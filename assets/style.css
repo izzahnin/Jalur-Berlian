@@ -12,7 +12,7 @@ body {
   font-family: "poppins", sans-serif;
   font-weight: 400;
 
-  background-color: #dca375;
+  background-color: #ffffff;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -163,7 +163,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: auto;
+  margin: 0 100px;
   /* align-items: center; */
 }
 .content-home img {
