@@ -123,7 +123,7 @@ nav ul li:hover::after {
   display: block;
   width: 28px;
   height: 3px;
-  background-color: #5f7161;
+  background-color: #ffc300;
   border-radius: 3px;
   cursor: pointer;
 }
@@ -514,5 +514,5 @@ footer {
   nav a:active,
   nav a:hover {
     font-weight: 600;
-    color: #5f7161;
+    color: #ffc300;
   }
