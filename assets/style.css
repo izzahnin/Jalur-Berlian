@@ -189,22 +189,21 @@ main {
   margin: 10px 0 20px 0;
   width: 200px;
 }
-.content-home h2 {
+h2.jasa,
+h2.door {
   font-weight: 600;
   line-height: 30px;
   align-items: center;
   color: #ffffff;
+}
+h2.door {
+  padding-bottom: 30px;
 }
 .content-home h1 {
   font-size: 70px;
   /* line-height: 100%; */
   align-items: center;
   color: #ffffff;
-}
-.content-home p {
-  color: #ffffff;
-  width: 40%;
-  padding: 0 0 20px 0;
 }
 
 /* ====ABOUT US===== */
@@ -590,9 +589,7 @@ footer {
   .content-home {
     margin: 0 30px;
   }
-  .content-home h2 {
-    /*  */
-  }
+
   .content-home h1 {
     font-size: 38px;
   }
