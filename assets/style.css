@@ -263,6 +263,7 @@ h2.door {
 .about-row2 p {
   margin-left: 15px;
   text-align: justify;
+  line-height: 30px;
 }
 /* ====PROFILE=== */
 
@@ -327,6 +328,7 @@ h2.door {
 .profile-row2 table {
   margin-left: 20px;
   font-size: 18px;
+  line-height: 30px;
 }
 
 /* =====SERVICE==== */
