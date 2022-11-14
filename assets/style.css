@@ -329,8 +329,14 @@ h2.door {
   margin-left: 20px;
   font-size: 18px;
   line-height: 30px;
+  word-wrap: break-word;
+  table-layout: fixed;
 }
 
+td {
+  vertical-align: middle;
+  word-wrap: break-word;
+}
 /* =====SERVICE==== */
 .service {
   display: flex;
