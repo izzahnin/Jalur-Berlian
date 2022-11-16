@@ -319,22 +319,19 @@ h2.door {
 .profile-row1 img {
   margin-right: 20px;
   justify-content: center;
-  /* align-content: flex-end; */
-  /* border-radius: 20px; */
   width: 375px;
-  /* box-shadow: 0 0 20px#000000; */
 }
 
 .profile-row2 table {
-  margin-left: 20px;
+  /* margin-left: 20px; */
   font-size: 18px;
   line-height: 30px;
   word-wrap: break-word;
   table-layout: fixed;
+  vertical-align: top;
 }
 
 td {
-  vertical-align: middle;
   word-wrap: break-word;
 }
 /* =====SERVICE==== */
